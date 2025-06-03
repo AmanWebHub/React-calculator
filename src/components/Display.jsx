@@ -1,12 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react';
 
-const Display = () => {
-    return (
-        <div className="display">
-            <input type="text" className="display-top" disabled />
-            <div className="display-bottom"></div>
-        </div>
-    )
+function Display(props) {
+
+  return (
+    <div className="screen">
+      <input
+        type="text"
+        className="screen-top"
+        value={props.value}
+        disabled
+      />
+      <div className="screen-bottom"></div>
+    </div>
+  );
 }
 
-export default Display
+export default Display;
